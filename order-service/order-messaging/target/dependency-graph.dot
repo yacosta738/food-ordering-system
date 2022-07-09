@@ -1,0 +1,29 @@
+digraph "order-messaging" {
+  node [shape="box",style="rounded",fontname="Helvetica",fontsize="14"]
+  edge [fontsize="10",fontname="Helvetica"]
+
+  // Node Definitions:
+  "com.food.ordering.system:order-application-service:jar"[label=<order-application-service>]
+  "com.food.ordering.system:order-domain-core:jar"[label=<order-domain-core>]
+  "com.food.ordering.system:order-messaging:jar"[label=<order-messaging>]
+  "org.projectlombok:lombok:jar"[label=<lombok<font point-size="10"><br/>(provided)</font>>]
+  "ch.qos.logback:logback-classic:jar"[label=<logback-classic>]
+  "ch.qos.logback:logback-core:jar"[label=<logback-core>]
+  "org.slf4j:slf4j-api:jar"[label=<slf4j-api>]
+  "org.springframework.boot:spring-boot-starter-logging:jar"[label=<spring-boot-starter-logging>]
+  "org.apache.logging.log4j:log4j-to-slf4j:jar"[label=<log4j-to-slf4j>]
+  "org.apache.logging.log4j:log4j-api:jar"[label=<log4j-api>]
+  "org.slf4j:jul-to-slf4j:jar"[label=<jul-to-slf4j>]
+
+  // Edge Definitions:
+  "com.food.ordering.system:order-application-service:jar" -> "com.food.ordering.system:order-domain-core:jar"
+  "com.food.ordering.system:order-messaging:jar" -> "com.food.ordering.system:order-application-service:jar"
+  "com.food.ordering.system:order-messaging:jar" -> "org.projectlombok:lombok:jar"
+  "ch.qos.logback:logback-classic:jar" -> "ch.qos.logback:logback-core:jar"
+  "ch.qos.logback:logback-classic:jar" -> "org.slf4j:slf4j-api:jar"
+  "org.springframework.boot:spring-boot-starter-logging:jar" -> "ch.qos.logback:logback-classic:jar"
+  "org.apache.logging.log4j:log4j-to-slf4j:jar" -> "org.apache.logging.log4j:log4j-api:jar"
+  "org.springframework.boot:spring-boot-starter-logging:jar" -> "org.apache.logging.log4j:log4j-to-slf4j:jar"
+  "org.springframework.boot:spring-boot-starter-logging:jar" -> "org.slf4j:jul-to-slf4j:jar"
+  "com.food.ordering.system:order-messaging:jar" -> "org.springframework.boot:spring-boot-starter-logging:jar"
+}
