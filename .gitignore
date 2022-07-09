@@ -10,3 +10,5 @@ buildNumber.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 /.idea/
+# All target directories are created by Maven, so we don't need to clean them up.
+**/target/
