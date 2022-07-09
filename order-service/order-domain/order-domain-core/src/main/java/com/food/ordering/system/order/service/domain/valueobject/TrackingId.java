@@ -8,4 +8,8 @@ public class TrackingId extends BaseId<UUID> {
   public TrackingId(UUID value) {
     super(value);
   }
+
+  public static TrackingId create() {
+    return new TrackingId(UUID.randomUUID());
+  }
 }

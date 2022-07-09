@@ -6,6 +6,8 @@ import com.food.ordering.system.domain.valueobject.Money;
 import com.food.ordering.system.domain.valueobject.OrderId;
 import com.food.ordering.system.domain.valueobject.OrderStatus;
 import com.food.ordering.system.domain.valueobject.RestaurantId;
+import com.food.ordering.system.order.service.domain.exception.OrderDomainException;
+import com.food.ordering.system.order.service.domain.valueobject.OrderItemId;
 import com.food.ordering.system.order.service.domain.valueobject.StreetAddress;
 import com.food.ordering.system.order.service.domain.valueobject.TrackingId;
 import java.util.List;
@@ -21,6 +23,58 @@ public class Order extends AggregateRoot<OrderId> {
   private TrackingId trackingId;
   private OrderStatus status;
   private List<String> failureMessages;
+
+  public void initializeOrder() {
+    setId(OrderId.create());
+    trackingId = TrackingId.create();
+    status = OrderStatus.PENDING;
+    initializeOrderItems();
+  }
+
+  public void validateOrder() {
+    validateInitialOrder();
+    validateTotalPrice();
+    validateItemsPrice();
+  }
+
+  private void validateItemsPrice() {
+    Money orderItemsTotal = items.stream().map(orderItem -> {
+      validateItemPrice(orderItem);
+      return orderItem.getSubTotal();
+    }).reduce(Money.ZERO, Money::add);
+    if (!price.equals(orderItemsTotal)) {
+      throw new OrderDomainException(
+          "Total price: " + price.getAmount() + "is not equals to Order items Total: "
+              + orderItemsTotal.getAmount() + "!");
+    }
+  }
+
+  private void validateItemPrice(OrderItem orderItem) {
+    if (!orderItem.isPriceValid()) {
+      throw new OrderDomainException(
+          "Order item price: " + orderItem.getPrice().getAmount() + " is not valid for product "
+              + orderItem.getProduct().getId().getValue());
+    }
+  }
+
+  private void validateTotalPrice() {
+    if (price == null || price.isGreaterThanZero()) {
+      throw new OrderDomainException("Total price must be greater than zero!");
+    }
+  }
+
+  private void validateInitialOrder() {
+    if (status != null || getId() != null) {
+      throw new OrderDomainException("Order is not in correct state for initialization!");
+    }
+  }
+
+  private void initializeOrderItems() {
+    long itemId = 1;
+    for (OrderItem item : items) {
+      item.initializeOrderItem(super.getId(), new OrderItemId(itemId++));
+    }
+  }
 
   private Order(Builder builder) {
     super.setId(builder.orderId);
