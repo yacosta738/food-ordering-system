@@ -1,7 +1,5 @@
 package com.food.ordering.system.order.service.domain;
 
-import com.food.ordering.system.order.service.domain.OrderCreateCommandHandler;
-import com.food.ordering.system.order.service.domain.OrderTrackCommandHandler;
 import com.food.ordering.system.order.service.domain.dto.create.CreateOrderCommand;
 import com.food.ordering.system.order.service.domain.dto.create.CreateOrderResponse;
 import com.food.ordering.system.order.service.domain.dto.track.TrackOrderQuery;
@@ -14,11 +12,11 @@ import org.springframework.validation.annotation.Validated;
 @Slf4j
 @Validated
 @Service
-class OrderApplicationServiceV1 implements OrderApplicationService {
+class OrderApplicationServiceImpl implements OrderApplicationService {
  private final OrderCreateCommandHandler orderCreateCommandHandler;
  private final OrderTrackCommandHandler orderTrackCommandHandler;
 
-  public OrderApplicationServiceV1(OrderCreateCommandHandler orderCreateCommandHandler,
+  public OrderApplicationServiceImpl(OrderCreateCommandHandler orderCreateCommandHandler,
       OrderTrackCommandHandler orderTrackCommandHandler) {
     this.orderCreateCommandHandler = orderCreateCommandHandler;
     this.orderTrackCommandHandler = orderTrackCommandHandler;
