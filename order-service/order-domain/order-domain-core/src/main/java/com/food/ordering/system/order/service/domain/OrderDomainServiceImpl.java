@@ -12,7 +12,7 @@ import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class OrderDomainServiceV1 implements OrderDomainService {
+public class OrderDomainServiceImpl implements OrderDomainService {
 
   public static final String UTC = "UTC";
 
