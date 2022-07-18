@@ -12,3 +12,4 @@ buildNumber.properties
 /.idea/
 # All target directories are created by Maven, so we don't need to clean them up.
 **/target/
+/infrastructure/docker-compose/volumes/
