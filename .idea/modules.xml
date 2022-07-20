@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-application/common-application.iml" filepath="$PROJECT_DIR$/common/common-application/common-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-dataaccess/common-dataaccess.iml" filepath="$PROJECT_DIR$/common/common-dataaccess/common-dataaccess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-domain/common-domain.iml" filepath="$PROJECT_DIR$/common/common-domain/common-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-service/customer-application/customer-application.iml" filepath="$PROJECT_DIR$/customer-service/customer-application/customer-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/customer-application-service.iml" filepath="$PROJECT_DIR$/customer-service/customer-domain/customer-application-service/customer-application-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-service/customer-container/customer-container.iml" filepath="$PROJECT_DIR$/customer-service/customer-container/customer-container.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-service/customer-dataaccess/customer-dataaccess.iml" filepath="$PROJECT_DIR$/customer-service/customer-dataaccess/customer-dataaccess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-service/customer-domain/customer-domain.iml" filepath="$PROJECT_DIR$/customer-service/customer-domain/customer-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-service/customer-domain/customer-domain-core/customer-domain-core.iml" filepath="$PROJECT_DIR$/customer-service/customer-domain/customer-domain-core/customer-domain-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-service/customer-messaging/customer-messaging.iml" filepath="$PROJECT_DIR$/customer-service/customer-messaging/customer-messaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-service/customer-service.iml" filepath="$PROJECT_DIR$/customer-service/customer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/food-ordering-system.iml" filepath="$PROJECT_DIR$/.idea/food-ordering-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/infrastructure.iml" filepath="$PROJECT_DIR$/infrastructure/infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/kafka/kafka.iml" filepath="$PROJECT_DIR$/infrastructure/kafka/kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/kafka-config-data.iml" filepath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/kafka-config-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/kafka/kafka-consumer/kafka-consumer.iml" filepath="$PROJECT_DIR$/infrastructure/kafka/kafka-consumer/kafka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/kafka/kafka-model/kafka-model.iml" filepath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/kafka-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/kafka/kafka-producer/kafka-producer.iml" filepath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/kafka-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-application/order-application.iml" filepath="$PROJECT_DIR$/order-service/order-application/order-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-domain/order-application-service/order-application-service.iml" filepath="$PROJECT_DIR$/order-service/order-domain/order-application-service/order-application-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-container/order-container.iml" filepath="$PROJECT_DIR$/order-service/order-container/order-container.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-dataaccess/order-dataaccess.iml" filepath="$PROJECT_DIR$/order-service/order-dataaccess/order-dataaccess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-domain/order-domain.iml" filepath="$PROJECT_DIR$/order-service/order-domain/order-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-domain/order-domain-core/order-domain-core.iml" filepath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/order-domain-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-messaging/order-messaging.iml" filepath="$PROJECT_DIR$/order-service/order-messaging/order-messaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-service.iml" filepath="$PROJECT_DIR$/order-service/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/outbox/outbox.iml" filepath="$PROJECT_DIR$/infrastructure/outbox/outbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-service/payment-domain/payment-application-service/payment-application-service.iml" filepath="$PROJECT_DIR$/payment-service/payment-domain/payment-application-service/payment-application-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-service/payment-container/payment-container.iml" filepath="$PROJECT_DIR$/payment-service/payment-container/payment-container.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-service/payment-dataaccess/payment-dataaccess.iml" filepath="$PROJECT_DIR$/payment-service/payment-dataaccess/payment-dataaccess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-service/payment-domain/payment-domain.iml" filepath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/payment-domain-core.iml" filepath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/payment-domain-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-service/payment-messaging/payment-messaging.iml" filepath="$PROJECT_DIR$/payment-service/payment-messaging/payment-messaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-service/payment-service.iml" filepath="$PROJECT_DIR$/payment-service/payment-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/restaurant-application-service.iml" filepath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/restaurant-application-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restaurant-service/restaurant-container/restaurant-container.iml" filepath="$PROJECT_DIR$/restaurant-service/restaurant-container/restaurant-container.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/restaurant-dataaccess.iml" filepath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/restaurant-dataaccess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain.iml" filepath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/restaurant-domain-core.iml" filepath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/restaurant-domain-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restaurant-service/restaurant-messaging/restaurant-messaging.iml" filepath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/restaurant-messaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restaurant-service/restaurant-service.iml" filepath="$PROJECT_DIR$/restaurant-service/restaurant-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/saga/saga.iml" filepath="$PROJECT_DIR$/infrastructure/saga/saga.iml" />
+    </modules>
+  </component>
+</project>

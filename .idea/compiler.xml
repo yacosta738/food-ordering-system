@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-application" />
+        <module name="customer-application-service" />
+        <module name="kafka-model" />
+        <module name="kafka-consumer" />
+        <module name="payment-messaging" />
+        <module name="customer-dataaccess" />
+        <module name="order-dataaccess" />
+        <module name="restaurant-container" />
+        <module name="order-messaging" />
+        <module name="payment-application-service" />
+        <module name="common-domain" />
+        <module name="order-application" />
+        <module name="customer-container" />
+        <module name="restaurant-domain-core" />
+        <module name="saga" />
+        <module name="payment-domain-core" />
+        <module name="order-domain-core" />
+        <module name="common-dataaccess" />
+        <module name="restaurant-application-service" />
+        <module name="customer-messaging" />
+        <module name="order-application-service" />
+        <module name="kafka-producer" />
+        <module name="kafka-config-data" />
+        <module name="outbox" />
+        <module name="payment-dataaccess" />
+        <module name="order-container" />
+        <module name="restaurant-dataaccess" />
+        <module name="payment-container" />
+        <module name="customer-application" />
+        <module name="customer-domain-core" />
+        <module name="restaurant-messaging" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="17" />
+      <module name="common-application" target="17" />
+      <module name="common-dataaccess" target="17" />
+      <module name="common-domain" target="17" />
+      <module name="customer-application" target="17" />
+      <module name="customer-application-service" target="17" />
+      <module name="customer-container" target="17" />
+      <module name="customer-dataaccess" target="17" />
+      <module name="customer-domain" target="17" />
+      <module name="customer-domain-core" target="17" />
+      <module name="customer-messaging" target="17" />
+      <module name="customer-service" target="17" />
+      <module name="food-ordering-system" target="17" />
+      <module name="infrastructure" target="17" />
+      <module name="kafka" target="17" />
+      <module name="kafka-config-data" target="17" />
+      <module name="kafka-consumer" target="17" />
+      <module name="kafka-model" target="17" />
+      <module name="kafka-producer" target="17" />
+      <module name="order-application" target="17" />
+      <module name="order-application-service" target="17" />
+      <module name="order-container" target="17" />
+      <module name="order-dataaccess" target="17" />
+      <module name="order-domain" target="17" />
+      <module name="order-domain-core" target="17" />
+      <module name="order-messaging" target="17" />
+      <module name="order-service" target="17" />
+      <module name="outbox" target="17" />
+      <module name="payment-application-service" target="17" />
+      <module name="payment-container" target="17" />
+      <module name="payment-dataaccess" target="17" />
+      <module name="payment-domain" target="17" />
+      <module name="payment-domain-core" target="17" />
+      <module name="payment-messaging" target="17" />
+      <module name="payment-service" target="17" />
+      <module name="restaurant-application-service" target="17" />
+      <module name="restaurant-container" target="17" />
+      <module name="restaurant-dataaccess" target="17" />
+      <module name="restaurant-domain" target="17" />
+      <module name="restaurant-domain-core" target="17" />
+      <module name="restaurant-messaging" target="17" />
+      <module name="restaurant-service" target="17" />
+      <module name="saga" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-application" options="-parameters" />
+      <module name="common-dataaccess" options="-parameters" />
+      <module name="common-domain" options="-parameters" />
+      <module name="customer-application" options="-parameters" />
+      <module name="customer-application-service" options="-parameters" />
+      <module name="customer-container" options="-parameters" />
+      <module name="customer-dataaccess" options="-parameters" />
+      <module name="customer-domain-core" options="-parameters" />
+      <module name="customer-messaging" options="-parameters" />
+      <module name="kafka-config-data" options="-parameters" />
+      <module name="kafka-consumer" options="-parameters" />
+      <module name="kafka-model" options="-parameters" />
+      <module name="kafka-producer" options="-parameters" />
+      <module name="order-application" options="-parameters" />
+      <module name="order-application-service" options="-parameters" />
+      <module name="order-container" options="-parameters" />
+      <module name="order-dataaccess" options="-parameters" />
+      <module name="order-domain-core" options="-parameters" />
+      <module name="order-messaging" options="-parameters" />
+      <module name="outbox" options="-parameters" />
+      <module name="payment-application-service" options="-parameters" />
+      <module name="payment-container" options="-parameters" />
+      <module name="payment-dataaccess" options="-parameters" />
+      <module name="payment-domain-core" options="-parameters" />
+      <module name="payment-messaging" options="-parameters" />
+      <module name="restaurant-application-service" options="-parameters" />
+      <module name="restaurant-container" options="-parameters" />
+      <module name="restaurant-dataaccess" options="-parameters" />
+      <module name="restaurant-domain-core" options="-parameters" />
+      <module name="restaurant-messaging" options="-parameters" />
+      <module name="saga" options="-parameters" />
+    </option>
+  </component>
+</project>
