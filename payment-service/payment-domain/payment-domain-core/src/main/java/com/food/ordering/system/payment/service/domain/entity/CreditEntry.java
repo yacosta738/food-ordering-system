@@ -4,7 +4,7 @@ import com.food.ordering.system.domain.entity.BaseEntity;
 import com.food.ordering.system.domain.valueobject.CustomerId;
 import com.food.ordering.system.domain.valueobject.Money;
 import com.food.ordering.system.payment.service.domain.valueobject.CreditEntryId;
-
+// TODO: CreditEntry and CreditHistory separete in aggregate root. For example, if you create a rest API here to top up credits for a customer
 public class CreditEntry extends BaseEntity<CreditEntryId> {
 
     private final CustomerId customerId;

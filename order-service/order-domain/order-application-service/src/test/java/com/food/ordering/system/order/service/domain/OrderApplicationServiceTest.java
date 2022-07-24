@@ -41,7 +41,7 @@ import static org.mockito.Mockito.when;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @SpringBootTest(classes = OrderTestConfiguration.class)
-public class OrderApplicationServiceTest {
+class OrderApplicationServiceTest {
 
     @Autowired
     private OrderApplicationService orderApplicationService;
@@ -165,7 +165,7 @@ public class OrderApplicationServiceTest {
     }
 
     @Test
-    public void testCreateOrder() {
+    void testCreateOrder() {
        CreateOrderResponse createOrderResponse = orderApplicationService.createOrder(createOrderCommand);
        assertEquals(createOrderResponse.getOrderStatus(), OrderStatus.PENDING);
        assertEquals(createOrderResponse.getMessage(), "Order created successfully");
@@ -173,7 +173,7 @@ public class OrderApplicationServiceTest {
     }
 
     @Test
-    public void testCreateOrderWithWrongTotalPrice() {
+    void testCreateOrderWithWrongTotalPrice() {
        OrderDomainException orderDomainException = assertThrows(OrderDomainException.class,
                 () -> orderApplicationService.createOrder(createOrderCommandWrongPrice));
        assertEquals(orderDomainException.getMessage(),
@@ -181,7 +181,7 @@ public class OrderApplicationServiceTest {
     }
 
     @Test
-    public void testCreateOrderWithWrongProductPrice() {
+    void testCreateOrderWithWrongProductPrice() {
        OrderDomainException orderDomainException = assertThrows(OrderDomainException.class,
                 () -> orderApplicationService.createOrder(createOrderCommandWrongProductPrice));
        assertEquals(orderDomainException.getMessage(),
@@ -189,7 +189,7 @@ public class OrderApplicationServiceTest {
     }
 
     @Test
-    public void testCreateOrderWithPassiveRestaurant() {
+    void testCreateOrderWithPassiveRestaurant() {
        Restaurant restaurantResponse = Restaurant.builder()
                 .restaurantId(new RestaurantId(createOrderCommand.getRestaurantId()))
                 .products(List.of(new Product(new ProductId(PRODUCT_ID), "product-1", new Money(new BigDecimal("50.00"))),
