@@ -95,6 +95,7 @@
       <module name="customer-application-service" options="-parameters" />
       <module name="customer-container" options="-parameters" />
       <module name="customer-dataaccess" options="-parameters" />
+      <module name="customer-domain" options="" />
       <module name="customer-domain-core" options="-parameters" />
       <module name="customer-messaging" options="-parameters" />
       <module name="kafka-config-data" options="-parameters" />

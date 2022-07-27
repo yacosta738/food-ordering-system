@@ -70,9 +70,9 @@ services:
       - ${GLOBAL_NETWORK:-kafka}
   kafka-manager:
     image: hlebalbau/kafka-manager:stable
-    restart: always
+    restart: unless-stopped
     ports:
-      - "9000:9000"
+      - "9001:9000"
     environment:
       ZK_HOSTS: "zookeeper:2181"
     networks:
